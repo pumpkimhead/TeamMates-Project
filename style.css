@@ -1,0 +1,39 @@
+@import url(reset.css);
+
+#nav-bar {
+    width: 60rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+#container-equipe {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: start;
+    width: 1270px;
+    height: 710px;
+
+}
+#equipe-tag {
+    height: 312px;
+    width: 552px;
+    display: flex;
+    background-color: antiquewhite;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+#equipe-tag h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+}
+
+#equipe-tag img {
+    border-radius: 100%;
+    height: 144px;
+    width: 144px;
+}
