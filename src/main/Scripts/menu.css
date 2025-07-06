@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+:root {
+    --nav-bg-color: #021017;
+    --bg-color: #010709;
+    --container-bg-color: #0A233A;
+    --container-border-bg-color: #0A233A;
+    --font-primary-color: #DCFEFF;
+    --font-secondary-color: #2BDEFD;
+    --font-third-color: #F9F4F4;
+    --font-family-primary: "Goldman", sans-serif;
+    --font-family-secondary: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-secondary);
+    color: var(--font-primary-color);
+}
+
+body {
+    width: 100%;
+    background-color: var(--bg-color);
+    background-image: url(../../Photos/Background.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background: var(--nav-bg-color);
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    /* position: fixed;*/
+    top: 0;
+}
+
+#nav-bar {
+    width: 100%;
+    font-family: var(--font-family-primary);
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+    gap: 60px;
+    background-color: var(--nav-bg-color);
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: var(--font-primary-color);
+    font-family: var(--font-family-primary);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+#nav-bar a:hover{
+        border-radius: 10px;
+        color: var(--font-secondary-color);
+        text-shadow: 0 0 10px var(--font-secondary-color);
+        text-decoration: underline;
+        cursor: pointer;
+}
+
+menu {
+    width: 80%;
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+menu h1 {
+    font-family: var(--font-family-primary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--font-third-color);
+    text-align: center;
+    margin-top: 80px;
+}
+.loading {
+    width: 950px;
+    height: 60px;
+    background: var(--container-bg-color);
+    border-radius: 100px;
+    box-sizing: 10px var(--font-secondary-color);
+    box-shadow: #2BDEFD 0px 0px 0px 3px;
+}
+
+@keyframes animacao {
+    0% {}
+    30% {}
+    60% {}
+    100% {}
+}
