@@ -42,8 +42,8 @@ h2 {
     align-items: center;
     justify-content: center;
     margin:133px;
-    
 }
+
 #equipe-tag {
     width: 550px;
     height: 310px;
@@ -52,7 +52,7 @@ h2 {
     padding: 2rem;
     margin: 0.5rem;
     border-radius: 1rem;
-    background-color: var(--container-border-bg-color);
+    background-color: var(--font-secondary-color);
     gap: 1.5rem;
     border:  2px solid var(--font-secondary-color);
     clip-path: polygon( 10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
@@ -72,15 +72,25 @@ h2 {
     height: 144px;
     width: 144px;
     object-fit: scale-down;
-    alt: inherit;
 }
 
 #equipe-tag-section {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     align-items: center;
-    justify-content: space-around; 
+    justify-content: space-around;    
+}
+
+#equipe-tag-border {
+    height: 310px;
+    display: flex;    
+    gap: 20px;
+    padding: 2rem;   
+    background-color: var(--container-bg-color);
+    top: 0;
+    left: 0;
+    clip-path: polygon( 10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+    position: absolute;
 }
 
 #equipe-tag-section a {
