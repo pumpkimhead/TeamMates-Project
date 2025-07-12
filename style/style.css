@@ -12,6 +12,11 @@ html, body {
   height: 100%;
   font-family: sans-serif;
 }
+body {
+  max-width: auto;
+  background-color: var(--bg-color);
+}
+
 :root {
     --nav-bg-color: #021017;
     --bg-color: #010709;
@@ -24,37 +29,33 @@ html, body {
     --font-family-secondary: "Inter", sans-serif;
 }
 
-body {
-  height: 100vh;
-  background-color: var(--bg-color);
-}
-
-
 .cabecalho{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content:center;
   background-color: #021017;
   color: var(--font-primary-color);
   height: 140px;
-  width: 100%;
+  width: 100vw;
 }
 .cabecalho__logo{
     display: flex;
     flex-direction: column;
-    padding: 64px;
     color:var(--font-primary-color);
+    margin-left: 4rem;
+    padding-right: 400px;
 }
 
 .cabecalho__menu{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 214px;
-    gap:85px;
     font-size: 18px;
+    gap:85px;
+    margin-right: 10rem;
 }
+
 .cabecalho__menu__link{
     font-family: var(--font-family-primary);
     color: var(--font-primary-color);
@@ -64,33 +65,37 @@ body {
 }
 
 .conteudo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   color: white;
 }
-.conteudo__titulo{
-  font-family: var(--font-family-primary);
-  font-size: 30px;
-  font-weight: 700;
-  text-align: center;
-  margin: 64px;
- 
-}
+
 .conteudo__titulo__caixa{
   display: flex;
   flex-direction: row;
-  align-items: baseline;
-  justify-content: flex-start;
-  margin-top: 100px;
-  margin-left: 88px;
-  padding-left: 280px;
+  align-items: center;
+  color: #DCFEFF;
+  justify-content: center;
+  gap: 13px;
+  margin-top: 150px;
+  padding-right: 600px;
 }
 
-.conteudo__texto__main{
+.conteudo__titulo{
+  font-family: var(--font-family-primary);
+  font-size: 30px;
+}
+
+.conteudo__main{
+  max-width:1580px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-top: 26px;
-  gap: 119px;
+  gap: 100px;
 }
 
 .conteudo__caixa{
@@ -100,7 +105,7 @@ body {
   height: 409px;
   display: flex;
   flex-direction:row;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 10px;
   margin-left: 88px;
@@ -111,14 +116,13 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: var(--font-third-color);
-  padding: 79px;
+  padding: 30px;
 }
 
 .conteudo__imagens{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 26px;
-    margin-right: 178px;
+    margin-right: 160px;
     gap: 50px;
 }
 
@@ -129,9 +133,12 @@ body {
   border: 3px solid var(--font-secondary-color);
 }
 
-.rodape{
-  width: 1128px;
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 80px;
   margin-top: 86px;
   margin-left: 106px;
+  padding-right: 150px;
 } 
