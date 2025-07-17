@@ -74,29 +74,121 @@ header {
         cursor: pointer;
 }
 
-menu {
-    width: 80%;
-    gap: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-menu h1 {
-    font-family: var(--font-family-primary);
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--font-third-color);
-    text-align: center;
-    margin-top: 80px;
-}
-.loading {
-    width: 950px;
-    height: 60px;
-    background: var(--container-bg-color);
-    border-radius: 100px;
-    box-sizing: 10px var(--font-secondary-color);
-    box-shadow: #2BDEFD 0px 0px 0px 3px;
-}
+  .titulo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .barra-progresso {
+      width: 50%;
+      background-color: #021017;
+      border-radius: 30px;
+      margin: 20px auto;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid var(--font-secondary-color);
+    }
+
+    .barra-preenchida {
+      width: 20%;
+      background-color: var(--font-secondary-color);
+      height: 100%;
+    }
+
+    .porcentagem {
+      position: absolute;
+      right: 10px;
+      font-size: 14px;
+      color: #DCFEFF;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+        justify-content: center;
+    }
+
+    .container-semestre {
+      border: 2px solid #0A233A;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 30px;
+      width: 60%;
+      margin-top: 20px;
+    }
+
+    .botao-semestre {
+      background-color: #0A233A;
+      color: #DCFEFF;
+      width: 200px;
+      height: 40px;
+      font-size: 20px;
+      border: none;
+      padding: 8px 16px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      font-size: 22px;
+      background-color: #021017;
+      border: 2px solid #0A233A;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      color: #DCFEFF;
+      position: relative;
+    }
+
+    .card.bloqueado {
+      background-color: #010709;
+      opacity: 0.5;
+    }
+
+    .card-icon {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      font-size: 20px;
+    }
+
+    .desbloqueado::after {
+      content: "🏅";
+    }
+
+    .cadeado::after {
+      content: "🔒";
+    }
+
+    footer {
+      max-width: 60%;
+      margin-top: 10vh;
+      border-top: var(--container-border-bg-color) 3px solid;
+      text-align: center;
+      padding-top: 100px;
+      color: #DCFEFF;
+      width: 100%;
+    }
 
 @keyframes animacao {
     0% {}
