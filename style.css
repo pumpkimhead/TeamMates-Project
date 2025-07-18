@@ -2,7 +2,6 @@
 @import url(nav-bar.css);
 @import url(style.css);
 @import url(equipe.css);
-@import url(equipe-mobile.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
@@ -25,5 +24,4 @@ body {
     justify-content: center;
     background-color: var(--bg-color);
     justify-content: center;
-    overflow: hidden;
 }
