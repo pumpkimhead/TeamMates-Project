@@ -1,15 +1,17 @@
 #nav-bar {
     width: 100vw;
+    background-color: var(--nav-bg-color);
+}
+
+.nav-menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 1rem;
     gap: 60px;
-    background-color: var(--nav-bg-color);
-    
 }
 
-#nav-bar a {
+.nav-menu a {
     text-decoration: none;
     color: var(--font-primary-color);
     font-family: var(--font-family-primary);
@@ -23,4 +25,81 @@
         text-shadow: 0 0 10px var(--font-secondary-color);
         text-decoration: underline;
         cursor: pointer;
+=======
+.nav-menu a:hover{
+    border-radius: 10px;
+    color: var(--font-secondary-color);
+    text-shadow: 0 0 10px var(--font-secondary-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#nav-bar img {
+    display: none;
+}
+
+.navHamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display:block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--font-secondary-color);
+}
+
+@media (max-width:440px){
+    #nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100vw;
+        background-color: var(--nav-bg-color);
+        padding: 1rem;
+        gap: 60px;
+    }
+
+    .navHamburger {
+        display: block;        
+    }    
+    .navHamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+     .navHamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+     .navHamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #nav-bar img {
+    display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: +200%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        align-items: baseline;              
+        background-color: var(--nav-bg-color);
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+        width: 100vw;
+    }
 }
