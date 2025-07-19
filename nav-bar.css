@@ -78,7 +78,7 @@
     .nav-menu {
         position: absolute;
         right: -100%;
-        top: 73px;
+        top: 70px;
         gap: 0;
         flex-direction: column;
         justify-content: center;
