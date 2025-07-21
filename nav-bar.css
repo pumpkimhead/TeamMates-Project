@@ -46,6 +46,7 @@
     background-color: var(--font-secondary-color);
 }
 
+/* Mobile */
 @media (max-width:440px){
     #nav-bar {
         display: flex;
