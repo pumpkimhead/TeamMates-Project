@@ -47,7 +47,7 @@
 }
 
 /* Mobile */
-@media (max-width:440px){
+@media (max-width:768px){
     #nav-bar {
         display: flex;
         flex-direction: row;

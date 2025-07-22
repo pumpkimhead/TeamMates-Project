@@ -37,7 +37,7 @@ body {
   background-color: #021017;
   color: var(--font-primary-color);
   height: 140px;
-  width: 100vw;
+  width: 100%;
 }
 .cabecalho__logo{
     display: flex;
