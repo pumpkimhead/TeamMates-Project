@@ -1,7 +1,7 @@
 #nav-bar {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 250px;
     width: 100vw;
     background-color: var(--nav-bg-color);
 }

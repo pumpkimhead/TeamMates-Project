@@ -1,9 +1,9 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
+@import url(nav-bar.css);/*  coloquei dentro da pasta style */
 
 /* Reset CSS básico */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,7 +13,6 @@ html, body {
   font-family: sans-serif;
 }
 body {
-  max-width: auto;
   background-color: var(--bg-color);
 }
 
@@ -29,47 +28,6 @@ body {
     --font-family-secondary: "Inter", sans-serif;
 }
 
-.cabecalho{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content:space-between;
-  background-color: #021017;
-  color: var(--font-primary-color);
-  height: 140px;
-}
-.cabecalho__logo{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    color:var(--font-primary-color);
-    margin-left: 9rem;
-}
-
-.cabecalho__menu{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 18px;
-    gap:85px;
-    margin-right: 9rem;
-}
-
-.cabecalho__menu__link{
-    text-decoration: none;
-    color: var(--font-primary-color);
-    font-family: var(--font-family-primary);
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-.cabecalho__menu__link:hover{
-    border-radius: 10px;
-    color: var(--font-secondary-color);
-    text-shadow: 0 0 10px var(--font-secondary-color);
-    text-decoration: underline;
-    cursor: pointer;
-}
 .conteudo{
   display: flex;
   align-items: center;
@@ -138,7 +96,7 @@ body {
 }
 
 footer{
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   height: 80px;
@@ -147,7 +105,7 @@ footer{
   padding-right: 150px;
 } 
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
  h1{
   font-size: 28px;
  }
@@ -172,11 +130,11 @@ footer{
 }
 .cabecalho__menu{
     display: none;
-}
+} 
 
 .cabecalho__menu__link{
    display: none;
-} 
+}    
 
 .conteudo{
   display: flex;
@@ -184,6 +142,7 @@ footer{
   justify-content:center;
   flex-direction: column;
   color: white;
+  gap: 20px;
 }
 .conteudo__titulo__caixa{
   width: 100%;
@@ -192,8 +151,9 @@ footer{
   flex-direction: row;
   justify-content: center;
   margin-top: 70px;
-  padding: 0 ;
+  padding: 0;
 }
+
 .conteudo__icone{
   width: 113px;
   height: 32px;
@@ -238,10 +198,10 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     gap: 15px;
     margin-top:0px;
     padding-right: 250px;
-  
 }
 
 .conteudo__imagens__perfil{

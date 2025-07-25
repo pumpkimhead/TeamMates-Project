@@ -9,11 +9,10 @@
   box-sizing: border-box;
 }
 html, body {
-  height: 100%;
+  width: 100vw;
   font-family: sans-serif;
 }
 body {
-  max-width: auto;
   background-color: var(--bg-color);
 }
 

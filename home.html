@@ -2,26 +2,28 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HOME - teammates</title>
   <link rel="stylesheet" href="style/home.css">
 
 </head>
 <body>
-  <header class="cabecalho">
-    
-    <div class="cabecalho__logo">
-      <h1>TEAMMATES</h1>
-       <img class="cabecalho__logo__icon" src="img/line dev teammates.svg" alt="logo do teammates" >
-    </div>
-
-    <nav class="cabecalho__menu">
-      <a class="cabecalho__menu__link" href="home.html">Home</a>
-      <a class="cabecalho__menu__link" href="">Projetos</a>
-      <a class="cabecalho__menu__link" href="equipe.html">Equipe</a>
-      <a class="cabecalho__menu__link" href="">Faculdade</a>
-    </nav>
-  </header>
-  
+  <header class="header">
+        <nav id="nav-bar">
+            <img src="/assets/svg-equipe/logo.svg" alt="TeamMates">
+         <div class="nav-menu">
+            <a class="nav-item" href="home.html">Home</a>
+            <a class="nav-item" href="projetos.html">Projetos</a>
+            <a class="nav-item" href="equipe.html">Equipe</a>
+            <a class="nav-item" href="#">Faculdade</a>
+        </div>
+         <div class="navHamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </div>
+        </nav>
+    </header>
 
   <main class="conteudo">
     <section class="conteudo__main">
@@ -46,6 +48,7 @@
       <img class="rodape-icon" src="img/footer.svg" alt="rodape com icones">
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
 
