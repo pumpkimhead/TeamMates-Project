@@ -23,7 +23,6 @@
 body {
     width: 100%;
     background-color: var(--bg-color);
-    background-image: url(../../Photos/Background.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -42,7 +41,7 @@ header {
     display: flex;
     justify-content: center;
     font-size: 25px;
-    /* position: fixed;*/
+    /* position: fixed; vou fixar dps*/
     top: 0;
 }
 
@@ -112,7 +111,7 @@ header {
     .menu{
         display: flex;
         flex-direction: column;
-       align-items: center;
+        align-items: center;
         justify-content: center;
     }
 
@@ -127,7 +126,7 @@ header {
       margin-top: 20px;
     }
 
-    .botao-semestre {
+    .select-semestre {
       background-color: #0A233A;
       color: #DCFEFF;
       width: 200px;
@@ -147,6 +146,7 @@ header {
       align-items: center;
       flex-wrap: wrap;
       gap: 20px;
+      width: 100%;
     }
 
     .card {
@@ -171,6 +171,16 @@ header {
       right: 10px;
       font-size: 20px;
     }
+    .cards {
+      display: none;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .cards.active {
+      display: flex
+    }
+
 
     .desbloqueado::after {
       content: "🏅";

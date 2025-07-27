@@ -27,24 +27,42 @@
             <div class="barra-preenchida"></div>
             <span class="porcentagem">20%</span>
         </div>
-
+        
+        
         <div class="container-semestre">
-            <button class="botao-semestre">1 semestre ▼</button>
-    
-            <div class="cards">
-            <div class="card desbloqueado">Gestão de Projetos <span class="card-icon"></span></div>
-            <div class="card desbloqueado">Hardware/Software Interface <span class="card-icon"></span></div>
-            <div class="card desbloqueado">Hands on Work I <span class="card-icon"></span></div>
-            <div class="card bloqueado cadeado">User Experience Design <span class="card-icon"></span></div>
-            <div class="card bloqueado cadeado">Empreendedorismo 2.0 <span class="card-icon"></span></div>
-            <div class="card bloqueado cadeado">Hands on Work II <span class="card-icon"></span></div>
+            <select class="select-semestre" onchange="mostrarSemestre(this.value)">
+            <option value="1semestre">1º Semestre</option>
+            <option value="2semestre">2º Semestre</option>
+            </select>
+
+
+            <div id="1semestre" class="cards active">
+            <div class="card desbloqueado">GESTÃO DE PROJETOS<span class="card-icon"></span></div>
+            <div class="card desbloqueado"> HARDWARE/SOFTWARE INTERFACE <span class="card-icon"></span></div>
+            <div class="card desbloqueado"> HANDS ON WORK I <span class="card-icon"></span></div>
+            <div class="card desbloqueado"> USER EXPERIENCE DESIGNE <span class="card-icon"></span></div>
+            <div class="card desbloqueado"> EMPREENDEDORISMO 2.0 <span class="card-icon"></span></div>
+            <div class="card desbloqueado"> HANDS ON WORK II <span class="card-icon"></span></div>
             </div>
+
+            <div id="2semestre" class="cards">
+            <div class="card bloqueado cadeado"> INTELIGÊNCIA INTERPESSOAL <span class="card-icon"></span></div>
+            <div class="card bloqueado cadeado"> INOVAÇÃO DISRUPTIVA <span class="card-icon"></span></div>
+            <div class="card bloqueado cadeado"> HANDS ON WORK III <span class="card-icon"></span></div>
+            <div class="card bloqueado cadeado"> PENSAMENTO COMPUTACIONAL <span class="card-icon"></span></div>
+            <div class="card bloqueado cadeado"> ENGENHARIA DE REQUISITOS <span class="card-icon"></span></div>
+            <div class="card bloqueado cadeado"> HANDS ON WORK IV <span class="card-icon"></span></div>
+            </div>
+            
         </div>
+
     </main>
         <footer>
                 <div class="footer-content">
-                    <p>© 2023 TeamMates. Todos os direitos reservados.</p>
+                    <p>© 2025 TeamMates. Todos os direitos reservados.</p>
                     <p>Desenvolvido por: Erick, Juarez, Rayltson, Yan</p>
         </footer>
+
+        <script src="menu.js"></script>
 </body>
 </html>
