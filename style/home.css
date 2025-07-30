@@ -69,28 +69,39 @@ body {
 }
 .perfil {
   width: 120px;
-  height: 120px;
-  clip-path: circle(50%);
+  height: 120px;  
   background-color: transparent;
   background-size: cover;
   background-position: center;
+  border-radius: 50%;
+  /* box-shadow: 0px 0px 25px 2px lightblue ; */
+  
 }
+
 /* Posicionamento manual dos elementos */
 .perfil:nth-child(1) {
   grid-column: 1;
   grid-row: 1;
+  border: 3px solid #ff922b; 
+  box-shadow: 0px 0px 25px 2px #ff922b; 
 }
 .perfil:nth-child(2) {
   grid-column: 2;
   grid-row: 2;
+  border: 3px solid #a0d83c;
+  box-shadow: 0px 0px 25px 2px #a0d83c;
 }
 .perfil:nth-child(3) {
   grid-column: 1;
   grid-row: 3;
+  border: 3px solid #69cdf9;
+  box-shadow: 0px 0px 25px 2px #69cdf9;
 }
 .perfil:nth-child(4) {
   grid-column: 2;
   grid-row: 4;
+  border: 3px solid #01603d;
+  box-shadow: 0px 0px 25px 2px #01603d;
 }
 
 .rodape {
