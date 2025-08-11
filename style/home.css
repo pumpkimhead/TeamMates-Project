@@ -33,7 +33,6 @@ body {
   justify-content: center;
   gap: 100px;
   margin-top: 10%;
-   
  }
 .container-titulo{
   display: flex;
@@ -105,9 +104,105 @@ body {
 }
 
 .rodape {
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 4em;
+}
+
+@media (max-width: 1024px) {
+
+.conteudo{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 10%;
+  margin-left: 3%;
+   
+ }
+ .conteudo-titulo{
+  font-family: var(--font-family-primary) ;
+  font-weight: 400;
+  font-size: 22px;
+  color:var(--font-primary-color) ;
+}
+.container-titulo{
+  display: flex;
+  gap: 10px;
+}
+ .background-image{
+  margin-top: 8%;
+}
+  .background-image{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 4 colunas iguais */
+  grid-template-rows: repeat(4, 100px);  /* altura fixa para espaçamento vertical */
+  width: 100%;
+  max-width: auto;
+  position: relative;
+}
+.perfil {
+  width: 100px;
+  height: 100px;  
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  /* box-shadow: 0px 0px 25px 2px lightblue ; */
+  
+}
+.imagem-rodape {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding: 2em;
+}
+}
+@media (max-width: 458px) {
+.conteudo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  gap: 20px;
+ }
+ .conteudo-icone{
+  width: 100px;
+ }
+ .container-texto{
+  width: 90vw;
+  background-color: var(--color-bg-text);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  margin-top: 1em;
+}
+ .conteudo-titulo{
+  font-family: var(--font-family-primary) ;
+  font-weight: 400;
+  font-size: 20px;
+  color:var(--font-primary-color) ;
+}
+ .background-image{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  position: relative;
+  margin: 0;
+}
+.perfil {
+  width: 80px;
+  height: 80px;  
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  /* box-shadow: 0px 0px 25px 2px lightblue ; */
+
+}
+.rodape {
+ display: none;
+
+}
 }
