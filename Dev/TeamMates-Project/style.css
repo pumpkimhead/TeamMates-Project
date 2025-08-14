@@ -122,3 +122,17 @@ body {
   align-items: center;
   padding: 0 0 81px 0;
 }
+
+@media screen and (max-width:767px) {
+
+}
+
+@media screen and (min-width:767px) and (max-width:1032px)
+{
+
+}
+
+@media screen and (min-width:1024px)
+{
+
+}
