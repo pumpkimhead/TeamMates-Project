@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+:root {
+    --nav-bg-color: #021017;
+    --bg-color: #010709;
+    --container-bg-color: #0A233A;
+    --container-border-bg-color: #0A233A;
+    --font-primary-color: #DCFEFF;
+    --font-secondary-color: #2BDEFD;
+    --font-third-color: #F9F4F4;
+    --font-family-primary: "Goldman", sans-serif;
+    --font-family-secondary: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-secondary);
+    color: var(--font-primary-color);
+}
+
+body {
+    width: 100%;
+    background-color: var(--bg-color);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background: var(--nav-bg-color);
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    /* position: fixed; vou fixar dps*/
+    top: 0;
+}
+
+#nav-bar {
+    width: 100%;
+    font-family: var(--font-family-primary);
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+    gap: 60px;
+    background-color: var(--nav-bg-color);
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: var(--font-primary-color);
+    font-family: var(--font-family-primary);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+#nav-bar a:hover{
+        border-radius: 10px;
+        color: var(--font-secondary-color);
+        text-shadow: 0 0 10px var(--font-secondary-color);
+        text-decoration: underline;
+        cursor: pointer;
+}
+
+  .titulo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .barra-progresso {
+      width: 50%;
+      background-color: #021017;
+      border-radius: 30px;
+      margin: 20px auto;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid var(--font-secondary-color);
+    }
+
+    .barra-preenchida {
+      width: 20%;
+      background-color: var(--font-secondary-color);
+      height: 100%;
+    }
+
+    .porcentagem {
+      position: absolute;
+      right: 10px;
+      font-size: 14px;
+      color: #DCFEFF;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-semestre {
+      border: 2px solid #0A233A;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 30px;
+      width: 60%;
+      margin-top: 20px;
+    }
+
+    .select-semestre {
+      background-color: #0A233A;
+      color: #DCFEFF;
+      width: 200px;
+      height: 40px;
+      font-size: 20px;
+      border: none;
+      padding: 8px 16px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .card {
+      font-size: 22px;
+      background-color: #021017;
+      border: 2px solid #0A233A;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      color: #DCFEFF;
+      position: relative;
+    }
+
+    .card.bloqueado {
+      background-color: #010709;
+      opacity: 0.5;
+    }
+
+    .card-icon {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      font-size: 20px;
+    }
+    .cards {
+      display: none;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .cards.active {
+      display: flex
+    }
+
+
+    .desbloqueado::after {
+      content: "🏅";
+    }
+
+    .cadeado::after {
+      content: "🔒";
+    }
+
+    footer {
+      max-width: 60%;
+      margin-top: 10vh;
+      border-top: var(--container-border-bg-color) 3px solid;
+      text-align: center;
+      padding-top: 100px;
+      color: #DCFEFF;
+      width: 100%;
+    }
+
+@keyframes animacao {
+    0% {}
+    30% {}
+    60% {}
+    100% {}
+}
