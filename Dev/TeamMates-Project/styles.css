@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+ /*teste*/
+
 :root {
     --nav-bg-color: #021017;
     --bg-color: #010709;
@@ -122,3 +124,4 @@ body {
   align-items: center;
   padding: 0 0 81px 0;
 }
+
