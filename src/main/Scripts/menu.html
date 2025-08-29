@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="shortcut icon" href="/src/Photos/T.png" type="Icon">
+    <title>TeamMates</title>
+</head>
+<body>
+    <header>
+        <nav id="nav-bar">
+                <a href="">Home</a>
+                <a href="">Projetos</a>
+                <a href="">Equipe</a>
+                <a href="">Faculdade</a>
+        </nav>
+    </header>
+    <main class="menu">
+        <div class="titulo">
+         Análise e Desenvolvimento de Sistemas
+        </div>
+        <div class="barra-progresso">
+            <div class="barra-preenchida"></div>
+            <span class="porcentagem">20%</span>
+        </div>
+        
+        
+        <div class="container-semestre">
+            <select class="select-semestre" onchange="mostrarSemestre(this.value)">
+            <option value="1semestre">1º Semestre</option>
+            <option value="2semestre">2º Semestre</option>
+            </select>
+
+
+            <div id="1semestre" class="cards active">
+            <div class="card desbloqueado">GESTÃO DE PROJETOS<span class="card-icon"></span></div>
+            <div class="card desbloqueado"> HARDWARE/SOFTWARE INTERFACE <span class="card-icon"></span></div>
+            <div class="card desbloqueado"> HANDS ON WORK I <span class="card-icon"></span></div>
+            <div class="card desbloqueado"> USER EXPERIENCE DESIGNE <span class="card-icon"></span></div>
+            <div class="card desbloqueado"> EMPREENDEDORISMO 2.0 <span class="card-icon"></span></div>
+            <div class="card desbloqueado"> HANDS ON WORK II <span class="card-icon"></span></div>
+            </div>
+
+            <div id="2semestre" class="cards">
+            <div class="card bloqueado cadeado"> INTELIGÊNCIA INTERPESSOAL <span class="card-icon"></span></div>
+            <div class="card bloqueado cadeado"> INOVAÇÃO DISRUPTIVA <span class="card-icon"></span></div>
+            <div class="card bloqueado cadeado"> HANDS ON WORK III <span class="card-icon"></span></div>
+            <div class="card bloqueado cadeado"> PENSAMENTO COMPUTACIONAL <span class="card-icon"></span></div>
+            <div class="card bloqueado cadeado"> ENGENHARIA DE REQUISITOS <span class="card-icon"></span></div>
+            <div class="card bloqueado cadeado"> HANDS ON WORK IV <span class="card-icon"></span></div>
+            </div>
+            
+        </div>
+
+    </main>
+        <footer>
+                <div class="footer-content">
+                    <p>© 2025 TeamMates. Todos os direitos reservados.</p>
+                    <p>Desenvolvido por: Erick, Juarez, Rayltson, Yan</p>
+        </footer>
+
+        <script src="menu.js"></script>
+</body>
+</html>
